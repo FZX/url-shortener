@@ -1,0 +1,5 @@
+bottle
+bottle-sqlalchemy
+sqlalchemy
+gevent
+validators

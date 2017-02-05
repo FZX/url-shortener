@@ -1,0 +1,47 @@
+% include("./views/header.html")
+
+
+<div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+			<h2>Link shortener <small>It's free and always will be.</small></h2>
+			<hr class="colorgraph">
+            <h3 class="text-center">Stats</h3>
+            <div class="list-group">
+                  <a href="{{site}}/{{id}}" class="list-group-item">
+                    <h4 class="list-group-item-heading">Short Url</h4>
+                    <p class="list-group-item-text">{{site}}/{{id}}</p>
+                  </a>
+                  <a  class="list-group-item">
+                    <h4 class="list-group-item-heading">Original Url</h4>
+                    <p class="list-group-item-text">{{url[:120]}}...</p>
+                  </a>
+                  <a  class="list-group-item">
+                    <h4 class="list-group-item-heading">Clicks</h4>
+                    <p class="list-group-item-text">{{clicks}}</p>
+                  </a>
+                  <a  class="list-group-item">
+                    <h4 class="list-group-item-heading">Created</h4>
+                    <p class="list-group-item-text">{{str(created)[:-10]}}</p>
+                  </a>
+            </div>
+		    <form id="urlform" role="form" method="POST">
+			<div class="form-group">
+                <div class="input-group">
+				<input type="url" name="url" id="url" class="form-control input-lg" placeholder="Paste URL" tabindex="1" required>
+                <span class="input-group-btn">
+                    <button id="shrinkbtn" class="btn btn-success btn-block btn-lg" type="sumbit">Shrink</button>
+                </span>
+                </div>
+                <br />
+			</div>
+		</form>
+	</div>
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <div id="shrinkresult">
+        </div>
+    </div>
+</div>
+
+% include("./views/footer.html")

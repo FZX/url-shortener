@@ -1,0 +1,30 @@
+% include("./views/header.html")
+
+
+<div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+			<h2>Link shortener <small>It's free and always will be.</small></h2>
+			<hr class="colorgraph">
+            <br />
+            <br />
+		    <form id="urlform" role="form" method="POST">
+			<div class="form-group">
+                <div class="input-group">
+				<input type="url" name="url" id="url" class="form-control input-lg" placeholder="Paste URL" tabindex="1" required>
+                <span class="input-group-btn">
+                    <button id="shrinkbtn" class="btn btn-success btn-block btn-lg" type="sumbit">Shrink</button>
+                </span>
+                </div>
+                <br />
+			</div>
+		</form>
+	</div>
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <div id="shrinkresult">
+        </div>
+    </div>
+</div>
+
+% include("./views/footer.html")
