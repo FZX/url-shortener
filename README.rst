@@ -1,4 +1,4 @@
-.. image:: http://img.ge/images/31651738274206239600.png
+.. image:: http://img.ge/images/13138805619324166632.png
   :target: https://github.com/FZX/url-shortener
   :alt: Url-shortener Logo
   :align: right
@@ -11,6 +11,8 @@
 .. _greenlent: https://greenlet.readthedocs.io/en/latest/
 .. _gevent: http://www.gevent.org/
 .. _Validation: https://validators.readthedocs.io/en/latest/
+.. _framework: http://getbootstrap.com/
+.. _library: http://jquery.com
 
 
 
@@ -20,6 +22,12 @@ URL-Shortener
 ============================
 
 URL-Shortener is simple service built using Bottlepy.
+
+.. image:: http://img.ge/images/44805353180251627319.gif
+  :target: https://github.com/FZX/url-shortener
+  :alt: Url-shortener Logo
+  :align: right
+  
 Used packages.
 
 * **Bottlepy** is a fast, simple and lightweight WSGI_ micro web-framework for Python_. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <http://docs.python.org/library/>`_..
@@ -27,7 +35,18 @@ Used packages.
 * **Bottle-SQLAlchemy:** plugin_ integrates SQLAlchemy with Bottle application. It injects a SQLAlchemy session in route and handle the session cycle.
 * **Gevent:** gevent_ is a coroutine -based Python_ networking library that uses greenlet to provide a high-level synchronous API on top of the libev event loop.
 * **Validators:** Python_ Data Validation_ for Humans™.
+* **Bootstrap:** is the most popular HTML, CSS, and JS framework_ for developing responsive, mobile first projects on the web.
+* **Jquery** is a fast, small, and feature-rich JavaScript library_.
 
+
+
+You can access shrinked url stats at yourdomain.com/1/stats,
+yourdomain.com/2/stats and so on.
+
+.. image:: http://img.ge/images/82635037725497962912.png
+  :target: https://github.com/FZX/url-shortener
+  :alt: Url-shortener Logo
+  :align: right
 
 Example: Simple developer api
 ----------------------------------
@@ -67,7 +86,7 @@ Download and Setup
 
 * First you need to get this repository on your machine ``git clone https://github.com/FZX/url-shortener.git``
 * Move to directory ``cd url-shortener``
-* Install all necessary packages ``pip3 install -r requirements.txt`` . 
+* Install all necessary packages ``pip3 install -r requirements.txt`` .
 * Change variable ``site`` to your address.
 Url-Shortener runs with **Python 3.3+**.
 
